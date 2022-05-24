@@ -1,0 +1,88 @@
+// CLASS DEFAULTS ----------------------------------------------------------------------------------
+
+@use "./variables"as v;
+
+.container {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  max-width: v.$width-container;
+}
+
+section {
+  padding: v.$section-padding 0;
+}
+
+.pr-05 {
+  padding-right: 0.5rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pl-05 {
+  padding-left: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.w-100 {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.fadeIn-up {
+  opacity: 0;
+  transform: translateY(8rem);
+  transition: transform 0.8s ease-in, opacity 0.7s ease-in,
+    background-color 0.4s ease-in-out;
+
+  &.appear {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.slideIn-left {
+  opacity: 0;
+  transform: translateX(10rem);
+  transition: transform 0.8s ease-in, opacity 0.8s ease-in,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+  &.appear {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.slideIn-right {
+  opacity: 0;
+  transform: translateX(-10rem);
+  transition: transform 0.6s ease-in, opacity 0.7s ease-in,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+  &.appear {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+
+// ----- Media Queries ------------------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+
+  section {
+    padding: 5rem 0;
+  }
+}

@@ -1,0 +1,56 @@
+@use '../abstracts/variables'as *;
+
+.btn {
+   font-weight: 400;
+   font-size: $fs-btn;
+   border-radius: 0.4rem;
+   display: inline-block;
+   padding: 1.6rem 3.2rem;
+}
+
+.btn-outline {
+   color: $color-primary;
+   box-shadow: $box-shadow-md;
+   background-color: transparent;
+   border: 0.2rem solid lighten($color-primary, 20%);
+   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+
+   &:hover {
+      color: $color-light-100;
+      background-color: $color-primary;
+      border: 0.2rem solid $color-primary;
+   }
+}
+
+.btn-gradient {
+   color: $color-light-100;
+   box-shadow: $box-shadow-md;
+   background: $color-gradient1;
+   transition: padding 0.3s ease-in-out;
+
+   svg {
+      fill: $color-light-100;
+      transform: translateY(0.1rem);
+   }
+
+   &:hover {
+      padding: 1.6rem 3.8rem;
+   }
+}
+
+.btn-text {
+   font-weight: 600;
+   padding: 1.6rem 0;
+   font-size: $fs-btn;
+   color: $color-btn-primary;
+
+   svg {
+      fill: $color-btn-primary;
+      transform: translate(0.6rem, 0.32rem);
+      transition: transform 0.3s ease-in-out;
+   }
+
+   &:hover svg {
+      transform: translate(1rem, 0.32rem);
+   }
+}

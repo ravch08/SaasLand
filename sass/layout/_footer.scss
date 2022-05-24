@@ -1,0 +1,93 @@
+@use "../abstracts/helper"as *;
+
+footer {
+   padding: 6rem 0;
+
+   .footer-wrapper {
+      gap: 2rem;
+      @extend .flexColumn-center;
+   }
+}
+
+.ftr-nav {
+   gap: 3rem;
+   padding: 2rem 0;
+   @extend .flexRow-between;
+
+   a {
+      font-weight: 400;
+      color: $color-body;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+         color: $color-primary;
+      }
+   }
+}
+
+.footbar {
+   width: 100%;
+   @extend .flexRow-between;
+
+   .social-links {
+      gap: 2rem;
+      @extend .flexRow-between;
+
+      svg {
+         fill: $color-primary;
+      }
+   }
+
+   p {
+      font-size: $fs-subheading;
+   }
+
+   a {
+      color: $color-primary;
+   }
+}
+
+.scrollTop {
+   border: none;
+   bottom: 1.5%;
+   right: 4%;
+   z-index: 99;
+   width: 5.5rem;
+   height: 5.5rem;
+   cursor: pointer;
+   position: fixed;
+   border-radius: 50%;
+   transform: scale(0);
+   @extend .flexRow-center;
+   box-shadow: $box-shadow-md;
+   background-color: $color-primary;
+   transition: background-color 0.3s ease-in-out, transform 0.4s ease-in-out;
+
+   svg {
+      fill: $color-light-100;
+   }
+
+   &:hover {
+      background-color: darken($color-primary, 5%);
+   }
+}
+
+.show {
+   transform: scale(1);
+}
+
+
+// ----- Media Queries ---------------------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+
+   .ftr-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .footbar {
+      gap: 2rem;
+      flex-direction: column;
+   }
+}

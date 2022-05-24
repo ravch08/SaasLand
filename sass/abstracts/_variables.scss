@@ -1,0 +1,66 @@
+// Font Variables -------- fm - Font Family -- fs - Font Size -- fw - Font Weight -------
+
+$fm-body : 'Poppins',
+sans-serif;
+
+$fm-primary : 'Poppins',
+sans-serif;
+
+$fs-h1 : 5.6rem;
+$fs-h2 : 3.2rem;
+$fs-h3 : 2.4rem;
+$fs-h4 : 1.8rem;
+$fs-h5 : 1.5rem;
+$fs-h6 : 1.2rem;
+
+$fs-btn : 1.6rem;
+$fs-body : 1.8rem;
+$fs-icons : 1.2rem;
+$fs-topbar : 1.2rem;
+$fs-subheading : 1.5rem;
+
+// -- Line Height - lh -------------------------------------------------------------------
+
+$lh-body : 1.6;
+$lh-heading : 1.2;
+
+// Color Variables -----------------------------------------------------------------------
+
+$color-gradient1: linear-gradient(90deg, hsl(18deg 100% 70%) 0%, hsl(332deg 100% 74%) 100%);
+$color-gradient2: linear-gradient(90deg, hsl(226deg 58% 55%) 0%, hsl(265deg 62% 54%) 100%);
+$color-gradient3: linear-gradient(-90deg, hsl(218deg 85% 97%) 0%, hsl(330deg 12% 97%) 100%);
+$color-gradient4: linear-gradient(0deg, hsl(240deg 9% 98%) 0%, hsl(240deg 9% 98%) 90%);
+
+$color-scrollbar : #eee;
+$color-scrollThumb : #583EB9;
+
+$color-primary : hsl(248deg 71% 61%);
+$color-secondary : hsl(159deg 82% 47%);
+
+$color-light-100 : hsl(0, 0%, 94%);
+$color-light-400 : hsl(180, 2%, 88%);
+$color-light-800 : hsl(215, 46%, 95%);
+
+$color-Dark-100 : hsl(221deg 30% 39% / 50%);
+$color-Dark-400 : hsl(221deg 30% 39%);
+$color-Dark-800 : hsl(234deg 29% 28%);
+
+$color-footerBar : hsl(0deg 0% 100%);
+
+$color-body : hsl(221deg 30% 39%);
+
+$color-btn-primary : hsl(351deg 100% 73%);
+$color-btn-secondary : hsl(248deg 71% 61%);
+
+// Dimensions Variables ------------------------------------------------------------------
+
+$width-container : 1240px;
+$section-padding : 8rem;
+
+// Box Shadow ----------------------------------------------------------------------------
+
+$box-shadow-lg: 0 1rem 3rem rgba(black, .175);
+$box-shadow-md: 0 .5rem 1rem rgba(black, .15);
+$box-shadow-sm: 0 .125rem .25rem rgba(black, .075);
+
+// ----------------------------------------------------------------------------

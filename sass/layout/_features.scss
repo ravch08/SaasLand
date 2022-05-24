@@ -1,0 +1,46 @@
+@use '../abstracts/helper'as *;
+
+.features-wrapper {
+   @extend .flexRow-between;
+}
+
+.feature-item {
+   text-align: center;
+   @extend .flexColumn-center;
+
+   h3 {
+      margin: 1.6rem 0;
+   }
+
+   figure {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      @extend .flexRow-center;
+   }
+
+   &:nth-child(1)>figure {
+      fill: $color-secondary;
+      background-color: lighten($color-secondary, 35%);
+   }
+
+   &:nth-child(2)>figure {
+      fill: $color-btn-primary;
+      background-color: lighten($color-btn-primary, 20%);
+   }
+
+   &:nth-child(3)>figure {
+      fill: $color-primary;
+      background-color: lighten($color-primary, 25%);
+   }
+}
+
+// ----- Media Queries ---------------------------------------------------------------------------
+
+@media screen and (max-width: 991px) {
+
+   .features-wrapper {
+      gap: 2.5rem;
+      flex-direction: column;
+   }
+}

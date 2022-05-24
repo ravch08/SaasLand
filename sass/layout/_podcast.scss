@@ -1,0 +1,136 @@
+@use '../abstracts/helper'as *;
+
+.podcast-wrapper {
+   padding: 5rem 0;
+   @extend .flexRow-between;
+
+   figure {
+      width: 52%;
+      position: relative;
+   }
+
+   .podcast-screen1 {
+      position: absolute;
+      bottom: 35%;
+      left: 60%;
+      box-shadow: $box-shadow-md;
+   }
+
+   .podcast-screen2 {
+      position: absolute;
+      bottom: 15%;
+      left: 45%;
+      box-shadow: $box-shadow-md;
+   }
+
+   .podcast-screen3 {
+      position: absolute;
+      bottom: 14%;
+      left: 5%;
+      box-shadow: $box-shadow-md;
+   }
+
+   .podcast-screen4 {
+      position: absolute;
+      bottom: 20%;
+      left: 40%;
+      box-shadow: $box-shadow-md;
+   }
+
+   .podcast-screen5 {
+      position: absolute;
+      bottom: 5%;
+      left: 35%;
+      box-shadow: $box-shadow-md;
+   }
+}
+
+.podcast-content {
+   width: 42%;
+
+   .podcast-list {
+      margin: 2.5rem 0;
+   }
+
+   .podcast-points {
+      margin-bottom: 2.5rem;
+   }
+
+   span {
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      color: $color-Dark-100;
+   }
+
+   h3 {
+      padding: 1.2rem 0 2rem;
+   }
+
+   li {
+      font-size: $fs-body;
+      padding: 1rem 0;
+
+      svg {
+         margin-right: 1.5rem;
+         fill: $color-primary;
+      }
+   }
+
+   h4 {
+      padding: 3rem 0 1.5rem;
+   }
+}
+
+// ----- Media Queries ---------------------------------------------------------------------------
+
+@media screen and (max-width: 991px) {
+
+   .podcast-wrapper {
+      gap: 2.5rem;
+      padding: 3.5rem 0;
+      flex-direction: column;
+
+      figure {
+         width: 95%;
+      }
+
+      &:nth-child(3) {
+         flex-direction: column-reverse;
+      }
+
+      .podcast-screen1 {
+         left: 0;
+      }
+
+      .podcast-screen2 {
+         left: 15%;
+         bottom: 10%;
+      }
+
+      .podcast-screen3 {
+         left: 0;
+         bottom: 5%;
+         width: 65%;
+      }
+
+      .podcast-screen4 {
+         left: 0;
+         width: 70%;
+      }
+
+      .podcast-screen5 {
+         left: 20%;
+         width: 75%;
+         bottom: 0%;
+      }
+   }
+
+   .podcast-content {
+      width: 95%;
+
+      li {
+         font-size: 1.4rem;
+         padding: 0.6rem 0;
+      }
+   }
+}
